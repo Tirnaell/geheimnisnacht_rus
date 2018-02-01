@@ -1,0 +1,57 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+
+# окончание женского рода для глаголов прошедшего времени, возвращает букву "а", если женщина, иначе ничего 
+defined_text = {
+	name = get_feminine_ending
+
+	text = {
+		localisation_key = feminine_ending
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = ""
+		trigger = {
+			is_female = no
+		}
+	}
+}
+
+# винительный падеж
+defined_text = {
+	name = get_accusative_case
+
+	text = {
+		localisation_key = accusative_case_she
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = accusative_case_he
+		trigger = {
+			is_female = no
+		}
+	}
+}
+
+# творительный падеж
+defined_text = {
+	name = get_instrumental_case
+
+	text = {
+		localisation_key = instrumental_case_she
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = instrumental_case_he
+		trigger = {
+			is_female = no
+		}
+	}
+}

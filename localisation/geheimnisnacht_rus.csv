@@ -1,0 +1,9 @@
+#RUS
+# окончание женского рода
+feminine_ending;а;x
+# винительный падеж
+accusative_case_she;её;x
+accusative_case_he;его;x
+# творительный падеж
+instrumental_case_she;ней;x
+instrumental_case_he;ним;x
